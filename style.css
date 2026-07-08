@@ -1071,3 +1071,75 @@ p{
     color:#35543c;
 
 }
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media (max-width:768px){
+
+body{
+    overflow-x:hidden;
+}
+
+.paper{
+    width:92%;
+    padding:25px;
+}
+
+.paper h1{
+    font-size:2.2rem;
+}
+
+.paper p{
+    font-size:1rem;
+    line-height:1.8;
+}
+
+/* Hanging photos */
+
+.hanging-wall{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.hanging-photo{
+    width:140px;
+}
+
+.hanging-photo img{
+    width:100%;
+    height:auto;
+}
+
+/* Film strips */
+
+.film-gallery{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:30px;
+}
+
+.film-strip{
+    width:220px;
+    margin:auto;
+}
+
+/* Memory cards */
+
+.memory-grid{
+    grid-template-columns:1fr;
+}
+
+/* Ending */
+
+.final-page{
+    width:92%;
+    padding:40px 20px;
+}
+
+.final-page p{
+    font-size:1.2rem;
+    text-align:center;
+}
+}
