@@ -649,9 +649,9 @@ body::before{
 
 
 .hanging-wall{
-    display:flex !important;
-    flex-wrap:wrap !important;
-    justify-content:center !important;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
     align-items:center;
     gap:35px;
     width:100%;
@@ -659,7 +659,7 @@ body::before{
 
 
 .hanging-photo{
-    width:200px !important;
+    width:200px;
 }
 
 /* FORCE HANGING WALL LAYOUT */
@@ -671,15 +671,15 @@ section.hanging-gallery .paper {
 
 
 section.hanging-gallery .hanging-wall {
-    display: grid !important;
-    grid-template-columns: repeat(4, 220px) !important;
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
     justify-content: center;
     gap: 40px;
 }
 
 
 section.hanging-gallery .hanging-photo {
-    width: 220px !important;
+    width: 220px;
 }
 html, body{
     overflow-x:hidden;
@@ -1075,71 +1075,99 @@ p{
    MOBILE RESPONSIVE
 =========================== */
 
-@media (max-width:768px){
+@media screen and (max-width:768px){
+
+*{
+    box-sizing:border-box;
+}
 
 body{
     overflow-x:hidden;
 }
 
-.paper{
-    width:92%;
+.paper,
+.back-page,
+.surprise-box,
+.letter-paper{
+    width:95%;
     padding:25px;
 }
 
-.paper h1{
-    font-size:2.2rem;
+h1{
+    font-size:40px;
 }
 
-.paper p{
-    font-size:1rem;
-    line-height:1.8;
+h2{
+    font-size:30px;
+}
+
+p{
+    font-size:18px;
 }
 
 /* Hanging photos */
 
-.hanging-wall{
+section.hanging-gallery .hanging-wall{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:repeat(2,1fr);
     gap:20px;
 }
 
-.hanging-photo{
-    width:140px;
-}
-
-.hanging-photo img{
+section.hanging-gallery .hanging-photo{
     width:100%;
-    height:auto;
 }
 
-/* Film strips */
-
-.film-gallery{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:30px;
+section.hanging-gallery .hanging-photo img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
 }
+
+/* Film strip */
 
 .film-strip{
-    width:220px;
-    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    padding:20px;
 }
 
-/* Memory cards */
+.film-frame{
+    width:100%;
+}
 
-.memory-grid{
+.film-frame img{
+    height:180px;
+}
+
+/* Fun facts */
+
+.fact-container{
+    display:grid;
     grid-template-columns:1fr;
 }
 
-/* Ending */
-
-.final-page{
-    width:92%;
-    padding:40px 20px;
+.fact-card{
+    width:100%;
 }
 
-.final-page p{
-    font-size:1.2rem;
-    text-align:center;
+/* Ending page */
+
+.back-page{
+    padding:40px 25px;
 }
+
+.ending-line{
+    font-size:22px;
+    line-height:1.5;
+}
+
+.ending-note{
+    font-size:18px;
+}
+
+.ending-sign{
+    font-size:22px;
+}
+
 }
