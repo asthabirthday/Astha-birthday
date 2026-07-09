@@ -9,7 +9,11 @@ function openBook(){
         behavior:"smooth"
     });
 
-}const letter = `So Astha, this is your 17th birthday.
+    document.getElementById("bgMusic").play();
+
+}
+
+const letter = `So Astha, this is your 17th birthday.
 
 I wish you get more happiness every single day and don't think about useless random things.
 
@@ -48,27 +52,4 @@ function typeLetter(){
 }
 
 
-setTimeout(typeLetter,2000);
-let music = document.getElementById("music");
-let playing = false;
-
-function toggleMusic(){
-
-    if(playing){
-
-        music.pause();
-
-        document.querySelector(".music-button").innerHTML = "🎵 Play Music";
-
-    } 
-    else {
-
-        music.play();
-
-        document.querySelector(".music-button").innerHTML = "⏸ Pause Music";
-
-    }
-
-    playing = !playing;
-
-}
+setTimeout(typeLetter, 2000);

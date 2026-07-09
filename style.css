@@ -1208,3 +1208,71 @@ section.hanging-gallery .hanging-photo img{
         overflow:hidden;
     }
 }
+.song-card{
+    width:280px;
+    margin:30px auto;
+    padding:22px;
+    background:#f8f2e8;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    cursor:pointer;
+    transition:.3s;
+}
+
+.song-card:hover{
+    transform:translateY(-5px) rotate(-1deg);
+}
+
+.song-icon{
+    font-size:32px;
+}
+
+.song-card h3{
+    color:#49654f;
+    margin:10px 0 5px;
+}
+
+.song-card p{
+    color:#666;
+}
+
+.song-card span{
+    font-size:14px;
+    color:#8b7b65;
+    font-style:italic;
+}
+.song-card{
+    display:block;
+    width:320px;
+    margin:30px auto 0;
+    padding:18px;
+    background:#fffaf2;
+    border:2px dashed #c8d5c0;
+    border-radius:18px;
+    text-align:center;
+    text-decoration:none;
+    color:#3e5c46;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.song-card:hover{
+    transform:translateY(-4px) rotate(-1deg);
+}
+
+.song-card h3{
+    margin:10px 0;
+    font-family:"Playfair Display", serif;
+}
+
+.song-card p{
+    margin:8px 0;
+    color:#666;
+}
+
+.song-card span{
+    font-size:14px;
+    color:#8a7b67;
+    font-style:italic;
+}
