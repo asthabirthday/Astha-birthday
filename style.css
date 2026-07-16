@@ -223,6 +223,7 @@ button:hover{
     border-left:5px solid #6f9677;
     border-radius:10px;
     text-align:left;
+    text-align:left
 }
 
 .memory h3{
@@ -319,7 +320,7 @@ button:hover{
 
 }/* Scrapbook Decorations */
 
-.paper{
+.paper{ 
 
     background:
     linear-gradient(#fffdf7,#fffdf7);
@@ -431,7 +432,7 @@ body::before{
 .letter-paper{
 
     background:#fff8e8;
-
+    
     width:90%;
 
     max-width:700px;
@@ -445,7 +446,7 @@ body::before{
     position:relative;
 
     font-family:'Caveat', cursive;
-
+    
 }
 
 
@@ -1275,4 +1276,64 @@ section.hanging-gallery .hanging-photo img{
     font-size:14px;
     color:#8a7b67;
     font-style:italic;
+}
+.page1{
+    background-image: url("assets/bg1.png");
+}
+
+.page2{
+    background-image: url("assets/bg2.png");
+}
+
+.page3{
+    background-image: url("assets/bg3.png");
+}
+
+.page4{
+    background-image: url("assets/bg4.png");
+}
+
+.page5{
+    background-image: url("assets/bg5.png");
+}
+
+.page6{
+    background-image: url("assets/bg6.png");
+}
+
+.page7{
+    background-image: url("assets/bg7.png");
+}
+
+.page8{
+    background-image: url("assets/bg8.png");
+}
+
+.page9{
+    background-image: url("assets/bg9.png");
+}
+
+.page10{
+    background-image: url("assets/bg10.png");
+}
+
+.page11{
+    background-image: url("assets/bg11.png");
+}
+
+.page1,
+.page2,
+.page3,
+.page4,
+.page5,
+.page6,
+.page7,
+.page8,
+.page9,
+.page10,
+.page11{
+background-size: cover;
+    background-position: center;
+background-repeat: no-repeat;
+background-position: center;
 }
