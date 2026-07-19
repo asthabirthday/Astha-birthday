@@ -13,7 +13,7 @@ function openBook(){
 
 }
 
-const letter = `So Astha, this is your 17th birthday.
+const letter = `So Astha, this is your 18th birthday.
 
 I wish you get more happiness every single day and don't think about useless random things.
 
